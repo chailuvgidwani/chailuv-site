@@ -23,10 +23,10 @@ function CaseStudy({ w, flip }: { w: WorkItem; flip: boolean }) {
         style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "clamp(28px, 5vw, 64px)", alignItems: "center", direction: flip ? "rtl" : "ltr" }}
       >
         <Reveal style={{ direction: "ltr" }}>
-          <div style={{ position: "relative", aspectRatio: "4 / 3", overflow: "hidden", borderRadius: "var(--radius-2)", background: "var(--color-bg)", boxShadow: "inset 0 0 0 1px var(--rule-strong)" }}>
-            {/* District map, drawn in the brand palette. */}
+          <div style={{ position: "relative", aspectRatio: "1 / 1", overflow: "hidden", borderRadius: "var(--radius-2)", background: "var(--color-bg)", boxShadow: "inset 0 0 0 1px var(--rule-strong)" }}>
+            {/* District map, drawn in the brand palette (square source). */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={w.img} alt={`${w.title} — district map`} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
+            <img src={w.img} alt={`${w.title} — district map`} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             <span style={{ position: "absolute", top: 14, left: 14, fontFamily: "var(--font-mono)", fontSize: 12, fontWeight: 600, letterSpacing: "0.1em", color: "var(--egg-50)", background: "var(--accent)", padding: "6px 10px" }}>{w.no}</span>
           </div>
         </Reveal>
@@ -83,7 +83,7 @@ export function WorkView() {
           <div style={{ background: "var(--egg-200)", borderRadius: "var(--radius-3)", padding: "clamp(28px, 5vw, 56px)", display: "flex", justifyContent: "space-between", alignItems: "center", gap: 24, flexWrap: "wrap" }}>
             <div>
               <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(1.5rem, 3vw, 2.2rem)", letterSpacing: "-0.02em" }}>Building a finance team?</h3>
-              <p style={{ fontFamily: "var(--font-sans)", color: "var(--text-secondary)", marginTop: 8, fontSize: "1.05rem" }}>I take on a small number of campaigns each cycle.</p>
+              <p style={{ fontFamily: "var(--font-sans)", color: "var(--text-secondary)", marginTop: 8, fontSize: "1.05rem" }}>I usually work with a single candidate a cycle.</p>
             </div>
             <Button as={Link} href="/about" size="lg">
               Start a conversation

@@ -17,8 +17,8 @@ const WRAP: React.CSSProperties = {
 
 const TIMELINE = [
   { yr: "2026", role: "Finance Director, Ammar for Congress (CA-48)" },
-  { yr: "2024", role: "Finance Director, Neva Parker for Assembly" },
-  { yr: "2023", role: "Finance Director, Jessica Morse for Congress" },
+  { yr: "2024", role: "Finance Director, Neva Parker for Assembly (AD-05)" },
+  { yr: "2023", role: "Finance Director, Jessica Morse for Congress (CA-03)" },
   { yr: "2022", role: "Finance Associate, New Chicago Consulting" },
   { yr: "B.A.", role: "History, Hofstra University" },
 ];
@@ -89,8 +89,20 @@ export function AboutView() {
           </div>
           <Reveal delay={120}>
             <div style={{ background: "var(--ink-900)", borderRadius: "var(--radius-3)", padding: "clamp(28px, 4vw, 44px)" }}>
-              <Quote tone="onDark">
-                Fundraising isn&apos;t the glamorous part of a campaign. It&apos;s the part that decides whether there&apos;s a campaign at all.
+              <Quote
+                tone="onDark"
+                cite={
+                  <a
+                    href="https://4.bp.blogspot.com/-uv0tQ4f378k/Tp6VUx3AYEI/AAAAAAAAAjs/YVZiNztBliM/s1600/f857e7b0250b102d94d7001438c0f03b.gif"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: 3 }}
+                  >
+                    Calvin
+                  </a>
+                }
+              >
+                I&apos;m killing time while I wait for life to shower me with meaning and happiness.
               </Quote>
             </div>
           </Reveal>
@@ -109,7 +121,7 @@ export function AboutView() {
                 Planning a race, or want a print?
               </h2>
               <p style={{ color: "var(--text-secondary)", marginTop: 14, fontSize: "1.05rem", lineHeight: 1.6, maxWidth: "30ch" }}>
-                I take on a few campaigns each cycle and I&apos;m always glad to talk photographs.
+                I&apos;m always happy to talk campaigns, cameras, and Chelsea FC.
               </p>
             </div>
             <ContactForm />

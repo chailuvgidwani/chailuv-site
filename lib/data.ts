@@ -127,5 +127,6 @@ export const CG_PLATES: Plate[] = [
   { figure: "15", caption: "Ronnie driving, 7:50 p.m.", meta: "18mm · ISO 200 · 1/30", src: "/photos/gallery/RonnieDriving.jpg", ratio: "3 / 2", category: "chicago" },
 ];
 
-/** Hero / About portrait. */
-export const CG_PORTRAIT = "/photos/portrait.jpg";
+/** Hero / About portrait. Filename is versioned so a content change forces
+    clients to re-fetch instead of serving a stale cached copy. */
+export const CG_PORTRAIT = "/photos/portrait-color.jpg";

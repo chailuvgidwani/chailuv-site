@@ -2,8 +2,8 @@ import React from "react";
 
 export interface QuoteProps extends React.HTMLAttributes<HTMLElement> {
   children?: React.ReactNode;
-  /** Attribution name. */
-  cite?: string;
+  /** Attribution name (may include a link). */
+  cite?: React.ReactNode;
   /** Attribution role / source. */
   role?: string;
   /** @default "default" */
