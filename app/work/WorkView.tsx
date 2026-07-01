@@ -20,7 +20,7 @@ function CaseStudy({ w, flip }: { w: WorkItem; flip: boolean }) {
     <article style={{ paddingTop: "clamp(40px, 6vw, 80px)", paddingBottom: "clamp(40px, 6vw, 80px)", borderTop: "1px solid var(--rule)" }}>
       <div
         className="cg-collapse cg-case"
-        style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "clamp(28px, 5vw, 64px)", alignItems: "center", direction: flip ? "rtl" : "ltr" }}
+        style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "clamp(32px, 5vw, 80px)", alignItems: "center", direction: flip ? "rtl" : "ltr" }}
       >
         <Reveal style={{ direction: "ltr" }}>
           <div style={{ position: "relative", aspectRatio: "1 / 1", overflow: "hidden", borderRadius: "var(--radius-2)", background: "var(--color-bg)", boxShadow: "inset 0 0 0 1px var(--rule-strong)" }}>

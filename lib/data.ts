@@ -101,7 +101,7 @@ export const CG_WORK: WorkItem[] = [
     stats: [
       { value: "$33K+", label: "Raised in the closing stretch" },
       { value: "+50%", label: "Over the prior period", delta: "+50%" },
-      { value: "Assembly", label: "California state race" },
+      { value: "AD-05", label: "California Assembly race" },
     ],
   },
 ];

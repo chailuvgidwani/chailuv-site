@@ -7,12 +7,10 @@ import { Rule } from "@/components/core/Rule";
 import { NAV } from "./nav";
 
 const CONTACT_EMAIL = "chailuvgidwani@gmail.com";
-/* Social URLs are still placeholders — replace the hrefs below when ready. */
 const ELSEWHERE: { label: string; href: string }[] = [
-  { label: "Instagram", href: "#" },
-  { label: "LinkedIn", href: "#" },
-  { label: "Signal", href: "#" },
-  { label: "Résumé (PDF)", href: "#" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/chailuvgidwani/" },
+  { label: "Signal", href: "https://signal.me/#eu/0dvZVmDJI-8x4T1n1Nun404MoDlnX3YdS2iFerSmN1H5Czh2ZSJDRpFsQdEUuEtw" },
+  { label: "Résumé (PDF)", href: "https://drive.google.com/file/d/1sCEkMCy3wuf0gUB-cQefBapZyBGdOGN2/view?usp=sharing" },
 ];
 
 function InternalCol({ title }: { title: string }) {
@@ -46,6 +44,8 @@ function ExternalCol({ title }: { title: string }) {
         <a
           key={l.label}
           href={l.href}
+          target="_blank"
+          rel="noopener noreferrer"
           style={{ fontFamily: "var(--font-sans)", fontSize: 15, color: "var(--egg-100)", textDecoration: "none", width: "fit-content" }}
           onMouseEnter={(e) => (e.currentTarget.style.color = "var(--blue-300)")}
           onMouseLeave={(e) => (e.currentTarget.style.color = "var(--egg-100)")}

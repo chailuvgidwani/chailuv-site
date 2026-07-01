@@ -50,10 +50,18 @@ export function AboutView() {
             <Reveal delay={140}>
               <div style={{ marginTop: 24, display: "flex", flexDirection: "column", gap: 16, maxWidth: "54ch" }}>
                 <p style={{ fontSize: "1.15rem", lineHeight: 1.6, color: "var(--text-secondary)" }}>
-                  I run finance operations for political campaigns — building call-time programs, owning budget and cashflow, and raising the money that keeps a race competitive. I&apos;ve directed finance for congressional and state races in California and worked some of the biggest campaigns in Chicago, where I&apos;m based.
+                  The political bug bit me when I was young. I interned on my first race in high school, and never looked back.
+                  <sup style={{ fontFamily: "var(--font-mono)", fontSize: "0.62em", color: "var(--highlight)", fontWeight: 600, marginLeft: 1 }}>1</sup> I spent nearly two years in Chicago honing the skills of fundraising, and have been serving as Finance Director ever since.
                 </p>
                 <p style={{ fontSize: "1.15rem", lineHeight: 1.6, color: "var(--text-secondary)" }}>
-                  The camera is the other half. I shoot when I travel — Paris and Reims, the California coast, a night out in the city — mostly in available light, mostly the ordinary spaces between the big moments.
+                  I run finance operations for Democratic campaigns — building call-time programs, owning budget and cashflow, and raising the money that keeps a race competitive. I&apos;ve raised for congressional and assembly races in California, and prior to that worked with municipal and county-level candidates in Chicago, where I&apos;m based.
+                </p>
+                <p style={{ fontSize: "1.15rem", lineHeight: 1.6, color: "var(--text-secondary)" }}>
+                  I was born in Singapore, raised in the Chicago suburbs, and went to school in New York.
+                </p>
+                <p style={{ fontFamily: "var(--font-mono)", fontSize: 12, lineHeight: 1.5, letterSpacing: "0.02em", color: "var(--text-muted)", marginTop: 4, paddingTop: 14, borderTop: "1px solid var(--rule)" }}>
+                  <sup style={{ color: "var(--highlight)", fontWeight: 600, marginRight: 4 }}>1</sup>
+                  I may have looked back once or twice.
                 </p>
               </div>
             </Reveal>

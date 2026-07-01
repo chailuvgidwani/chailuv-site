@@ -136,7 +136,7 @@ export function Header() {
             );
           })}
           <span style={{ width: 1, height: 20, background: "var(--rule)", margin: "0 8px" }} />
-          <Button as={Link} href="/about" size="sm">
+          <Button as={Link} href="/about#contact" size="sm">
             Get in touch
           </Button>
         </nav>
@@ -212,7 +212,7 @@ export function Header() {
             );
           })}
           <div style={{ marginTop: 14 }}>
-            <Button as={Link} href="/about" size="md" full>
+            <Button as={Link} href="/about#contact" size="md" full>
               Get in touch
             </Button>
           </div>
