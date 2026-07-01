@@ -40,7 +40,7 @@ export interface Plate {
   src: string;
   ratio: string;
   /** Filter category on the Photographs page. */
-  category: "field" | "chicago" | "portrait";
+  category: "california" | "france" | "chicago" | "islands";
 }
 
 export const CG_WORK: WorkItem[] = [
@@ -94,16 +94,26 @@ export const CG_WORK: WorkItem[] = [
   },
 ];
 
+// Real photographs. `meta` (camera line) is from each file's EXIF and is
+// accurate. Captions + categories are drafts based on the image content —
+// review and correct the place names / groupings as needed.
 export const CG_PLATES: Plate[] = [
-  { figure: "01", caption: "Cook County, 6:14 a.m.", meta: "35mm · ISO 800 · 1/250", src: "/placeholders/plate-01.svg", ratio: "4 / 5", category: "field" },
-  { figure: "02", caption: "Pilsen, after the rally", meta: "50mm · ISO 200 · 1/500", src: "/placeholders/plate-02.svg", ratio: "3 / 2", category: "chicago" },
-  { figure: "03", caption: "Lake Street, blue hour", meta: "28mm · ISO 1600 · 1/60", src: "/placeholders/plate-03.svg", ratio: "3 / 2", category: "chicago" },
-  { figure: "04", caption: "Field office, election eve", meta: "35mm · ISO 3200 · 1/40", src: "/placeholders/plate-04.svg", ratio: "4 / 5", category: "field" },
-  { figure: "05", caption: "South Shore, first light", meta: "85mm · ISO 400 · 1/1000", src: "/placeholders/plate-05.svg", ratio: "3 / 2", category: "chicago" },
-  { figure: "06", caption: "The hold room", meta: "24mm · ISO 2000 · 1/50", src: "/placeholders/plate-06.svg", ratio: "4 / 5", category: "portrait" },
-  { figure: "07", caption: "Garfield Park conservatory", meta: "50mm · ISO 320 · 1/250", src: "/placeholders/plate-07.svg", ratio: "3 / 2", category: "chicago" },
-  { figure: "08", caption: "Closing night, the count", meta: "35mm · ISO 4000 · 1/30", src: "/placeholders/plate-08.svg", ratio: "4 / 5", category: "portrait" },
+  { figure: "01", caption: "Rue Cambon", meta: "55mm · ISO 100 · 1/125", src: "/photos/gallery/DSC_0644.jpg", ratio: "2 / 3", category: "france" },
+  { figure: "02", caption: "Paris, from Montmartre", meta: "28mm · ISO 800 · 1.6s", src: "/photos/gallery/DSC_0603.jpg", ratio: "3 / 2", category: "france" },
+  { figure: "03", caption: "Beverly Hills, through glass", meta: "55mm · ISO 280 · 1/125", src: "/photos/gallery/DSC_0083.jpg", ratio: "3 / 2", category: "california" },
+  { figure: "04", caption: "Place Drouet-d'Erlon, Reims", meta: "55mm · ISO 100 · 1/125", src: "/photos/gallery/DSC_0972.jpg", ratio: "3 / 2", category: "france" },
+  { figure: "05", caption: "Morning swim", meta: "55mm · ISO 800 · 1/1250", src: "/photos/gallery/DSC_0256.jpg", ratio: "3 / 2", category: "california" },
+  { figure: "06", caption: "Champagne cellar, Reims", meta: "22mm · ISO 3200 · 1/10", src: "/photos/gallery/DSC_0874.jpg", ratio: "3 / 2", category: "france" },
+  { figure: "07", caption: "Paris, blue hour", meta: "24mm · ISO 2000 · 1/60", src: "/photos/gallery/DSC_0583.jpg", ratio: "3 / 2", category: "france" },
+  { figure: "08", caption: "Resort, blue hour", meta: "18mm · ISO 3200 · 1/20", src: "/photos/gallery/DSC_0456A.jpg", ratio: "3 / 2", category: "california" },
+  { figure: "09", caption: "Above the marine layer", meta: "18mm · ISO 160 · 1/500", src: "/photos/gallery/DSC_0496A.jpg", ratio: "3 / 2", category: "california" },
+  { figure: "10", caption: "The Getty, midday", meta: "34mm · ISO 100 · 1/250", src: "/photos/gallery/DSC_0063.jpg", ratio: "3 / 2", category: "california" },
+  { figure: "11", caption: "Beach bar", meta: "26mm · ISO 200 · 1/500", src: "/photos/gallery/DSC_0163.jpg", ratio: "3 / 2", category: "islands" },
+  { figure: "12", caption: "Group stage, corner bar", meta: "30mm · ISO 800 · 1/250", src: "/photos/gallery/DCM2.jpg", ratio: "3 / 2", category: "chicago" },
+  { figure: "13", caption: "Oyster bar, low light", meta: "22mm · ISO 1600 · 1/20", src: "/photos/gallery/DSC_0057.jpg", ratio: "3 / 2", category: "chicago" },
+  { figure: "14", caption: "Reims, the fountain", meta: "48mm · ISO 100 · 1/160", src: "/photos/gallery/DSC_0756.jpg", ratio: "3 / 2", category: "france" },
+  { figure: "15", caption: "Ronnie driving, 7:50 p.m.", meta: "18mm · ISO 200 · 1/30", src: "/photos/gallery/RonnieDriving.jpg", ratio: "3 / 2", category: "chicago" },
 ];
 
-/** Hero / About portrait — replace with a real photograph. */
-export const CG_PORTRAIT = "/placeholders/portrait.svg";
+/** Hero / About portrait. */
+export const CG_PORTRAIT = "/photos/portrait.jpg";

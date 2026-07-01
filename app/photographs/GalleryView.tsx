@@ -13,7 +13,7 @@ const WRAP: React.CSSProperties = {
   padding: "0 clamp(20px, 5vw, 56px)",
 };
 
-const FILTERS = ["all", "field", "chicago", "portrait"] as const;
+const FILTERS = ["all", "california", "france", "chicago", "islands"] as const;
 type Filter = (typeof FILTERS)[number];
 
 function ctrlStyle(pos: React.CSSProperties): React.CSSProperties {

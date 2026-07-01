@@ -64,8 +64,8 @@ function Hero() {
             <img
               ref={imgRef}
               src={CG_PORTRAIT}
-              alt="Chailuv Gidwani"
-              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transform: "scale(1.06)", willChange: "transform" }}
+              alt="Chailuv Gidwani in front of Marina City, Chicago"
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%", filter: "grayscale(1) contrast(1.03)", transform: "scale(1.06)", willChange: "transform" }}
             />
           </div>
         </Reveal>
