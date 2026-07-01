@@ -1,17 +1,10 @@
 /* ============================================================
    SITE CONTENT — Chailuv Gidwani
    ------------------------------------------------------------
-   ⚠️  PLACEHOLDER CONTENT. Every string, figure, and image below
-   is illustrative and needs to be replaced with real, approved
-   material before this site is public.
-
-   To replace:
-   • Case studies  → edit CG_WORK (title/role/place/blurb/tags/stats).
-   • Photographs    → edit CG_PLATES (caption/meta/category/ratio).
-   • Imagery        → drop real files into /public and point `img`
-                      / `src` at them (e.g. "/photos/plate-01.jpg").
-                      The current /public/placeholders/*.svg are
-                      stand-ins drawn in the brand palette.
+   Real content. Case studies (CG_WORK) use the campaigns' district
+   maps in /public/photos/districts/. Photographs (CG_PLATES) are the
+   real gallery images in /public/photos/gallery/ — camera metadata is
+   from EXIF; captions/categories are editable drafts.
    ============================================================ */
 
 export interface WorkStat {
@@ -56,7 +49,7 @@ export const CG_WORK: WorkItem[] = [
     tags: ["Call time", "Paid comms", "Warchest"],
     blurb:
       "Directed finance for a competitive open-seat congressional race — building and operationalizing the finance plan and call-time program, owning budget and cashflow through spend-down, and helping shape contrast strategy across mail and digital.",
-    img: "/placeholders/work-01.svg",
+    img: "/photos/districts/ca48.png",
     stats: [
       { value: "$350K+", label: "Raised as Finance Director" },
       { value: "+33%", label: "Lift over the prior period", delta: "+33%" },
@@ -67,12 +60,12 @@ export const CG_WORK: WorkItem[] = [
     id: "morse",
     no: "02",
     role: "Finance Director",
-    title: "Jessica Morse for Congress",
-    place: "California · 2023–24",
+    title: "Morse for Congress",
+    place: "CA-03 · 2023–24",
     tags: ["Call time", "Budget", "PACs & labor"],
     blurb:
       "Ran the finance operation for a top-tier U.S. House race — building the finance plan and call-time program, prospecting and managing hundreds of hours of candidate call time, and outraising a sitting Republican incumbent in back-to-back quarters.",
-    img: "/placeholders/work-02.svg",
+    img: "/photos/districts/ca3.png",
     stats: [
       { value: "$2.2M+", label: "Total raised" },
       { value: "2", unit: "qtrs", label: "Outraising the incumbent" },
@@ -87,24 +80,24 @@ export const CG_WORK: WorkItem[] = [
     place: "Chicago · 2022–23",
     tags: ["Events", "Reporting", "Automation"],
     blurb:
-      "On the finance teams behind a Chicago mayoral re-election, the state party, a pro-choice PAC, and the Cook County State's Attorney — prospecting call time, tracking financial performance, building automations, and staffing the events that carried a seven-figure share.",
-    img: "/placeholders/work-03.svg",
+      "On the finance teams behind Lightfoot for Chicago, Project 50 PAC, and Eileen O'Neill Burke for Cook County State's Attorney — prospecting call time, tracking financial performance, building automations, and staffing the events that carried a seven-figure share.",
+    img: "/photos/districts/chicago.png",
     stats: [
       { value: "$3M+", label: "Raised across the firm's campaigns" },
       { value: "$1M+", label: "Raised through events staffed" },
-      { value: "4", label: "Marquee Chicago-area races" },
+      { value: "3", label: "Marquee Chicago clients" },
     ],
   },
   {
     id: "parker",
     no: "04",
     role: "Finance Director",
-    title: "Neva Parker for Assembly",
-    place: "California · 2024",
+    title: "Parker for Assembly",
+    place: "AD-05 · 2024",
     tags: ["Call time", "Events", "Strategy"],
     blurb:
       "Overhauled fundraising for a California Assembly race in the closing months — standing up a call-time program and staffing candidate events to reach high-capacity donors, and advising the campaign manager on election-day strategy.",
-    img: "/placeholders/work-04.svg",
+    img: "/photos/districts/ad5.png",
     stats: [
       { value: "$33K+", label: "Raised in the closing stretch" },
       { value: "+50%", label: "Over the prior period", delta: "+50%" },

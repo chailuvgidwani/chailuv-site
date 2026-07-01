@@ -59,7 +59,7 @@ function Hero() {
         </div>
         <Reveal delay={200} style={{ alignSelf: "stretch" }}>
           <div style={{ position: "relative", height: "100%", minHeight: 400, overflow: "hidden", borderRadius: "var(--radius-2)", boxShadow: "inset 0 0 0 1px var(--rule-strong)" }}>
-            {/* PLACEHOLDER portrait — replace /public/placeholders/portrait.svg with a real B&W photograph. */}
+            {/* Portrait — Marina City, Chicago. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               ref={imgRef}

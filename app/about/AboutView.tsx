@@ -33,7 +33,7 @@ export function AboutView() {
         >
           <Reveal>
             <div style={{ position: "relative", aspectRatio: "4 / 5", overflow: "hidden", borderRadius: "var(--radius-2)", boxShadow: "inset 0 0 0 1px var(--rule-strong)" }}>
-              {/* PLACEHOLDER portrait — replace /public/placeholders/portrait.svg. */}
+              {/* Portrait — Marina City, Chicago. */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={CG_PORTRAIT} alt="Chailuv Gidwani in front of Marina City, Chicago" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%" }} />
             </div>

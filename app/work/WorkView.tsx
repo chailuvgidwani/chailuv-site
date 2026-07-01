@@ -23,10 +23,10 @@ function CaseStudy({ w, flip }: { w: WorkItem; flip: boolean }) {
         style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "clamp(28px, 5vw, 64px)", alignItems: "center", direction: flip ? "rtl" : "ltr" }}
       >
         <Reveal style={{ direction: "ltr" }}>
-          <div style={{ position: "relative", aspectRatio: "4 / 3", overflow: "hidden", borderRadius: "var(--radius-2)", boxShadow: "inset 0 0 0 1px var(--rule-strong)" }}>
-            {/* PLACEHOLDER case-study image — replace via lib/data.ts `img`. */}
+          <div style={{ position: "relative", aspectRatio: "4 / 3", overflow: "hidden", borderRadius: "var(--radius-2)", background: "var(--color-bg)", boxShadow: "inset 0 0 0 1px var(--rule-strong)" }}>
+            {/* District map, drawn in the brand palette. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={w.img} alt="" loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            <img src={w.img} alt={`${w.title} — district map`} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
             <span style={{ position: "absolute", top: 14, left: 14, fontFamily: "var(--font-mono)", fontSize: 12, fontWeight: 600, letterSpacing: "0.1em", color: "var(--egg-50)", background: "var(--accent)", padding: "6px 10px" }}>{w.no}</span>
           </div>
         </Reveal>
