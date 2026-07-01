@@ -44,13 +44,13 @@ export function AboutView() {
             </Reveal>
             <Reveal delay={80}>
               <h1 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(2.2rem, 4.4vw, 3.6rem)", letterSpacing: "-0.035em", lineHeight: 1.02, margin: "20px 0 0" }}>
-                I raise the money, and I take the pictures.
+                The political bug bit me when I was young.
               </h1>
             </Reveal>
             <Reveal delay={140}>
               <div style={{ marginTop: 24, display: "flex", flexDirection: "column", gap: 16, maxWidth: "54ch" }}>
                 <p style={{ fontSize: "1.15rem", lineHeight: 1.6, color: "var(--text-secondary)" }}>
-                  The political bug bit me when I was young. I interned on my first race in high school, and never looked back.
+                  I interned on my first race in high school, and never looked back.
                   <sup style={{ fontFamily: "var(--font-mono)", fontSize: "0.62em", color: "var(--highlight)", fontWeight: 600, marginLeft: 1 }}>1</sup> I spent nearly two years in Chicago honing the skills of fundraising, and have been serving as Finance Director ever since.
                 </p>
                 <p style={{ fontSize: "1.15rem", lineHeight: 1.6, color: "var(--text-secondary)" }}>
