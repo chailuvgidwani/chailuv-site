@@ -87,8 +87,8 @@ export function ContactForm() {
         <Input id="c-email" name="email" type="email" placeholder="you@example.com" invalid={!!errors.email} autoComplete="email" />
       </Field>
       <Field style={{ gridColumn: "1 / -1" }} label="This is about" htmlFor="c-reason">
-        <Select id="c-reason" name="reason" defaultValue="A 2026 campaign">
-          <option>A 2026 campaign</option>
+        <Select id="c-reason" name="reason" defaultValue="Campaign finance">
+          <option>Campaign finance</option>
           <option>Consulting / advising</option>
           <option>A photograph</option>
           <option>Just saying hello</option>

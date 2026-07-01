@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Case study 04 — placeholder">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#0a141f" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="#efe9d8"/>
+  <rect width="1200" height="800" fill="url(#grid)"/>
+  <polygon points="0,0 1200,0 0,800" fill="#e5ddc7" fill-opacity="0.6"/>
+  <rect x="0.75" y="0.75" width="1198.5" height="798.5" fill="none" stroke="#0a141f" stroke-opacity="0.28" stroke-width="1.5"/>
+  
+  <g transform="translate(600, 400)" text-anchor="middle">
+    <rect x="-7" y="-58" width="14" height="3" fill="#a9852f"/>
+    <text x="0" y="-30" font-family="'IBM Plex Mono',monospace" font-size="13" letter-spacing="3" fill="#8a8b80">PLACEHOLDER</text>
+    <text x="0" y="4" font-family="'Schibsted Grotesk','Helvetica Neue',sans-serif" font-size="48" font-weight="700" letter-spacing="-0.5" fill="#0a141f">Case study 04</text>
+    <text x="0" y="34" font-family="'IBM Plex Mono',monospace" font-size="12" letter-spacing="1" fill="#8a8b80">campaign image</text>
+  </g>
+</svg>

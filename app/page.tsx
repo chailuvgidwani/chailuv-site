@@ -53,7 +53,7 @@ function Hero() {
           </Reveal>
           <Reveal delay={150}>
             <p style={{ fontFamily: "var(--font-sans)", fontSize: "clamp(1.05rem, 1.6vw, 1.3rem)", fontWeight: 500, lineHeight: 1.4, color: "var(--text-secondary)", margin: "20px 0 0", maxWidth: "34ch" }}>
-              Political campaigns and photography.
+              Campaign finance and photography.
             </p>
           </Reveal>
         </div>
@@ -76,10 +76,10 @@ function Hero() {
 
 function StatBand() {
   const stats = [
-    { value: "9", label: "Cycles run, city to statewide" },
-    { value: "$14M+", label: "Budgets managed" },
-    { value: "212k", label: "Doors in a single program" },
-    { value: "4", label: "Cameras that still work" },
+    { value: "$2.2M+", label: "Raised for a single U.S. House race" },
+    { value: "3", label: "Campaign finance operations directed" },
+    { value: "$3M+", label: "Raised on Chicago finance teams" },
+    { value: "2Q", label: "Outraising a sitting incumbent" },
   ];
   return (
     <section style={{ background: "var(--accent)", color: "var(--egg-50)" }}>
@@ -162,7 +162,7 @@ function PhotoStrip() {
       <Reveal>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", gap: 20, marginBottom: 32 }}>
           <div style={{ maxWidth: "26ch" }}>
-            <SectionLabel number="02">From the field</SectionLabel>
+            <SectionLabel number="02">Elsewhere</SectionLabel>
             <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(1.8rem, 3.4vw, 2.8rem)", letterSpacing: "-0.025em", margin: "16px 0 0" }}>Photographs</h2>
           </div>
           <Link

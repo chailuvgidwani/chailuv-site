@@ -4,7 +4,7 @@ import { GalleryView } from "./GalleryView";
 export const metadata: Metadata = {
   title: "Photographs",
   description:
-    "Photographs by Chailuv Gidwani — dawn light, field offices, and the people doing the work. Mostly black and white, mostly Chicago.",
+    "Photographs by Chailuv Gidwani — travel and street work from Paris, Reims, the California coast, the Caribbean, and Chicago.",
 };
 
 export default function PhotographsPage() {

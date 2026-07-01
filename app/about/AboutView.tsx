@@ -15,13 +15,12 @@ const WRAP: React.CSSProperties = {
   padding: "0 clamp(20px, 5vw, 56px)",
 };
 
-/* PLACEHOLDER — replace with the real résumé timeline. */
 const TIMELINE = [
-  { yr: "2024", role: "Campaign Manager, Congressional IL-06" },
-  { yr: "2023", role: "Senior Advisor, Chicago municipal runoff" },
-  { yr: "2022", role: "Field Director, statewide coordinated" },
-  { yr: "2019", role: "Regional Organizing Director" },
-  { yr: "2016", role: "First campaign — precinct captain" },
+  { yr: "2026", role: "Finance Director, Ammar for Congress (CA-48)" },
+  { yr: "2024", role: "Finance Director, Neva Parker for Assembly" },
+  { yr: "2023", role: "Finance Director, Jessica Morse for Congress" },
+  { yr: "2022", role: "Finance Associate, New Chicago Consulting" },
+  { yr: "B.A.", role: "History, Hofstra University" },
 ];
 
 export function AboutView() {
@@ -45,24 +44,24 @@ export function AboutView() {
             </Reveal>
             <Reveal delay={80}>
               <h1 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(2.2rem, 4.4vw, 3.6rem)", letterSpacing: "-0.035em", lineHeight: 1.02, margin: "20px 0 0" }}>
-                I run campaigns and I take pictures.
+                I raise the money, and I take the pictures.
               </h1>
             </Reveal>
             <Reveal delay={140}>
               <div style={{ marginTop: 24, display: "flex", flexDirection: "column", gap: 16, maxWidth: "54ch" }}>
                 <p style={{ fontSize: "1.15rem", lineHeight: 1.6, color: "var(--text-secondary)" }}>
-                  I&apos;ve spent a decade in Democratic field and management roles across Chicago and Illinois — the parts of a campaign that don&apos;t make the news but decide the result.
+                  I run finance operations for political campaigns — building call-time programs, owning budget and cashflow, and raising the money that keeps a race competitive. I&apos;ve directed finance for congressional and state races in California and worked some of the biggest campaigns in Chicago, where I&apos;m based.
                 </p>
                 <p style={{ fontSize: "1.15rem", lineHeight: 1.6, color: "var(--text-secondary)" }}>
-                  The camera came from the same habit: showing up before anyone else and paying attention. I shoot mostly at dawn, mostly in black and white, mostly the people doing the work.
+                  The camera is the other half. I shoot when I travel — Paris and Reims, the California coast, a night out in the city — mostly in available light, mostly the ordinary spaces between the big moments.
                 </p>
               </div>
             </Reveal>
             <Reveal delay={200}>
               <div style={{ display: "flex", gap: 8, marginTop: 24, flexWrap: "wrap" }}>
-                <Tag tone="blue">Field</Tag>
-                <Tag tone="neutral" variant="outline">Management</Tag>
-                <Tag tone="neutral" variant="outline">Message</Tag>
+                <Tag tone="blue">Finance</Tag>
+                <Tag tone="neutral" variant="outline">Call time</Tag>
+                <Tag tone="neutral" variant="outline">Budget</Tag>
                 <Tag tone="gold" variant="soft">Photography</Tag>
               </div>
             </Reveal>
@@ -90,8 +89,8 @@ export function AboutView() {
           </div>
           <Reveal delay={120}>
             <div style={{ background: "var(--ink-900)", borderRadius: "var(--radius-3)", padding: "clamp(28px, 4vw, 44px)" }}>
-              <Quote tone="onDark" cite="A candidate" role="who won">
-                He was the first one in the office and the last honest voice in the room.
+              <Quote tone="onDark">
+                Fundraising isn&apos;t the glamorous part of a campaign. It&apos;s the part that decides whether there&apos;s a campaign at all.
               </Quote>
             </div>
           </Reveal>

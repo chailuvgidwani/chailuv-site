@@ -27,14 +27,14 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://chailuvgidwani.com"),
   title: {
-    default: "Chailuv Gidwani — Campaigns & Photography",
+    default: "Chailuv Gidwani — Campaign Finance & Photography",
     template: "%s — Chailuv Gidwani",
   },
   description:
-    "Chailuv Gidwani runs political campaigns and takes photographs in Chicago, Illinois. Field programs, budgets, and the margins that decide races.",
+    "Chailuv Gidwani is a campaign finance director and photographer based in Chicago. Finance operations, call time, and the dollars that decide races.",
   openGraph: {
-    title: "Chailuv Gidwani — Campaigns & Photography",
-    description: "Political campaigns and photography. Chicago, Illinois.",
+    title: "Chailuv Gidwani — Campaign Finance & Photography",
+    description: "Campaign finance and photography. Chicago, Illinois.",
     type: "website",
   },
 };

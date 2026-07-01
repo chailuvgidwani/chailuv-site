@@ -64,12 +64,12 @@ export function WorkView() {
         </Reveal>
         <Reveal delay={80}>
           <h1 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(2.4rem, 5vw, 4rem)", letterSpacing: "-0.035em", lineHeight: 1, margin: "22px 0 0", maxWidth: "16ch" }}>
-            Field programs, budgets, and the margins that decide races.
+            Finance operations, call time, and the dollars that decide races.
           </h1>
         </Reveal>
         <Reveal delay={160}>
           <p style={{ fontFamily: "var(--font-sans)", fontSize: "1.15rem", lineHeight: 1.6, color: "var(--text-secondary)", maxWidth: "52ch", margin: "24px 0 0" }}>
-            A selection of cycles I&apos;ve run or advised — city, county, and statewide. Names and figures here are illustrative placeholders.
+            The campaigns whose finance operations I&apos;ve built and run — congressional and state, in California and Chicago.
           </p>
         </Reveal>
       </section>
@@ -82,7 +82,7 @@ export function WorkView() {
         <Reveal>
           <div style={{ background: "var(--egg-200)", borderRadius: "var(--radius-3)", padding: "clamp(28px, 5vw, 56px)", display: "flex", justifyContent: "space-between", alignItems: "center", gap: 24, flexWrap: "wrap" }}>
             <div>
-              <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(1.5rem, 3vw, 2.2rem)", letterSpacing: "-0.02em" }}>Planning a 2026 race?</h3>
+              <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(1.5rem, 3vw, 2.2rem)", letterSpacing: "-0.02em" }}>Building a finance team?</h3>
               <p style={{ fontFamily: "var(--font-sans)", color: "var(--text-secondary)", marginTop: 8, fontSize: "1.05rem" }}>I take on a small number of campaigns each cycle.</p>
             </div>
             <Button as={Link} href="/about" size="lg">

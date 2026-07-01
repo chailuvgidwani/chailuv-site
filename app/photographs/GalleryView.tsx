@@ -128,7 +128,7 @@ export function GalleryView() {
         </Reveal>
         <Reveal delay={80}>
           <h1 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(2.4rem, 5vw, 4rem)", letterSpacing: "-0.035em", lineHeight: 1, margin: "22px 0 0", maxWidth: "15ch" }}>
-            The mornings that make the margins.
+            Between the campaigns, a camera.
           </h1>
         </Reveal>
         <Reveal delay={140}>

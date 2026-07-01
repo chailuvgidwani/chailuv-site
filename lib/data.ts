@@ -43,53 +43,72 @@ export interface Plate {
   category: "california" | "france" | "chicago" | "islands";
 }
 
+// Real campaigns, from the résumé. Copy and figures are accurate; the
+// case-study IMAGES are still brand-coloured placeholders (finance work isn't
+// especially photogenic) — swap in real ones via `img` if/when you have them.
 export const CG_WORK: WorkItem[] = [
   {
-    id: "il-gov",
+    id: "morse",
     no: "01",
-    role: "Field Director",
-    title: "Statewide Coordinated Campaign",
-    place: "Illinois · 2022",
-    tags: ["Field", "Turnout", "Data"],
+    role: "Finance Director",
+    title: "Jessica Morse for Congress",
+    place: "California · 2023–24",
+    tags: ["Call time", "Budget", "PACs & labor"],
     blurb:
-      "Built and ran a 9-region field program from a single spreadsheet into 1,400 trained volunteers and a 212k-door universe.",
+      "Ran the finance operation for a top-tier U.S. House race — building the finance plan and call-time program, prospecting and managing hundreds of hours of candidate call time, and outraising a sitting Republican incumbent in back-to-back quarters.",
     img: "/placeholders/work-01.svg",
     stats: [
-      { value: "212k", label: "Doors knocked" },
-      { value: "+18.4", unit: "pts", label: "Net approval shift", delta: "+6.1" },
-      { value: "1,400", label: "Volunteers trained" },
+      { value: "$2.2M+", label: "Total raised" },
+      { value: "2", unit: "qtrs", label: "Outraising the incumbent" },
+      { value: "PAC", label: "& labor support secured" },
     ],
   },
   {
-    id: "chi-runoff",
+    id: "ammar",
     no: "02",
-    role: "Senior Advisor",
-    title: "Municipal Runoff",
-    place: "Chicago · 2023",
-    tags: ["Strategy", "Message", "GOTV"],
+    role: "Finance Director",
+    title: "Ammar for Congress",
+    place: "CA-48 · 2026",
+    tags: ["Call time", "Paid comms", "Warchest"],
     blurb:
-      "Rewrote the closing message in the final ten days and held the coalition together through a six-week runoff.",
+      "Directed finance for a competitive open-seat congressional race — building and operationalizing the finance plan and call-time program, owning budget and cashflow through spend-down, and helping shape contrast strategy across mail and digital.",
     img: "/placeholders/work-02.svg",
     stats: [
-      { value: "6", unit: "wk", label: "Runoff sprint" },
-      { value: "52.7%", label: "Final share", delta: "+3.9" },
-      { value: "38", label: "Wards organized" },
+      { value: "$350K+", label: "Raised as Finance Director" },
+      { value: "+33%", label: "Lift over the prior period", delta: "+33%" },
+      { value: "CA-48", label: "Open-seat U.S. House race" },
     ],
   },
   {
-    id: "il-06",
+    id: "new-chicago",
     no: "03",
-    role: "Campaign Manager",
-    title: "Congressional, IL-06",
-    place: "Illinois · 2024",
-    tags: ["Operations", "Budget", "Comms"],
+    role: "Finance Associate",
+    title: "New Chicago Consulting",
+    place: "Chicago · 2022–23",
+    tags: ["Events", "Reporting", "Automation"],
     blurb:
-      "Managed a $4.2M cycle end-to-end — staff, budget, paid media, and a field plan that out-ran the top of the ticket.",
+      "On the finance teams behind a Chicago mayoral re-election, the state party, a pro-choice PAC, and the Cook County State's Attorney — prospecting call time, tracking financial performance, building automations, and staffing the events that carried a seven-figure share.",
     img: "/placeholders/work-03.svg",
     stats: [
-      { value: "$4.2M", label: "Cycle budget" },
-      { value: "31", label: "Staff hired" },
-      { value: "+2.3", unit: "pts", label: "Over-performance", delta: "+2.3" },
+      { value: "$3M+", label: "Raised across the firm's campaigns" },
+      { value: "$1M+", label: "Raised through events staffed" },
+      { value: "4", label: "Marquee Chicago-area races" },
+    ],
+  },
+  {
+    id: "parker",
+    no: "04",
+    role: "Finance Director",
+    title: "Neva Parker for Assembly",
+    place: "California · 2024",
+    tags: ["Call time", "Events", "Strategy"],
+    blurb:
+      "Overhauled fundraising for a California Assembly race in the closing months — standing up a call-time program and staffing candidate events to reach high-capacity donors, and advising the campaign manager on election-day strategy.",
+    img: "/placeholders/work-04.svg",
+    stats: [
+      { value: "$33K+", label: "Raised in the closing stretch" },
+      { value: "+50%", label: "Over the prior period", delta: "+50%" },
+      { value: "Assembly", label: "California state race" },
     ],
   },
 ];

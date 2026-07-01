@@ -6,8 +6,8 @@ import { Button } from "@/components/core/Button";
 import { Rule } from "@/components/core/Rule";
 import { NAV } from "./nav";
 
-/* PLACEHOLDER — replace with the real contact address + social URLs. */
-const CONTACT_EMAIL = "chailuv@example.com";
+const CONTACT_EMAIL = "chailuvgidwani@gmail.com";
+/* Social URLs are still placeholders — replace the hrefs below when ready. */
 const ELSEWHERE: { label: string; href: string }[] = [
   { label: "Instagram", href: "#" },
   { label: "LinkedIn", href: "#" },
