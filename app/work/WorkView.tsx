@@ -64,12 +64,12 @@ export function WorkView() {
         </Reveal>
         <Reveal delay={80}>
           <h1 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(2.4rem, 5vw, 4rem)", letterSpacing: "-0.035em", lineHeight: 1, margin: "22px 0 0", maxWidth: "16ch" }}>
-            Finance operations, call time, and the dollars that decide races.
+            My fundraising portfolio.
           </h1>
         </Reveal>
         <Reveal delay={160}>
           <p style={{ fontFamily: "var(--font-sans)", fontSize: "1.15rem", lineHeight: 1.6, color: "var(--text-secondary)", maxWidth: "52ch", margin: "24px 0 0" }}>
-            The campaigns whose finance operations I&apos;ve built and run — congressional and state, in California and Chicago.
+            The campaigns whose finance operations I&apos;ve built and run — congressional and downballot, in California and Chicago.
           </p>
         </Reveal>
       </section>
