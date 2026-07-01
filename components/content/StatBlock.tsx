@@ -43,6 +43,7 @@ export function StatBlock({
         display: "flex",
         flexDirection: "column",
         gap: 10,
+        minWidth: 0,
         textAlign: align,
         paddingTop: 14,
         borderTop: `2px solid ${ruleColor}`,

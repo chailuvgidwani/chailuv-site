@@ -53,7 +53,7 @@ function Hero() {
           </Reveal>
           <Reveal delay={150}>
             <p style={{ fontFamily: "var(--font-sans)", fontSize: "clamp(1.05rem, 1.6vw, 1.3rem)", fontWeight: 500, lineHeight: 1.4, color: "var(--text-secondary)", margin: "20px 0 0", maxWidth: "34ch" }}>
-              Campaign finance and photography.
+              Fundraising for Democratic campaigns across America.
             </p>
           </Reveal>
         </div>
@@ -65,7 +65,7 @@ function Hero() {
               ref={imgRef}
               src={CG_PORTRAIT}
               alt="Chailuv Gidwani in front of Marina City, Chicago"
-              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%", filter: "grayscale(1) contrast(1.03)", transform: "scale(1.06)", willChange: "transform" }}
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%", transform: "scale(1.06)", willChange: "transform" }}
             />
           </div>
         </Reveal>

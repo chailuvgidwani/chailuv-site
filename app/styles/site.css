@@ -53,6 +53,15 @@ body {
   }
 }
 
+@media (max-width: 640px) {
+  /* Case-study metrics stack on phones — big display figures can't sit
+     three-across on a narrow screen without overflowing. */
+  .cg-stats {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+}
+
 @media (max-width: 560px) {
   .cg-collapse-4 {
     grid-template-columns: 1fr !important;

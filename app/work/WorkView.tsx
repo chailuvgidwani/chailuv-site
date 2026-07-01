@@ -42,7 +42,7 @@ function CaseStudy({ w, flip }: { w: WorkItem; flip: boolean }) {
             <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--accent)", marginBottom: 12 }}>{w.role} · {w.place}</div>
             <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(1.8rem, 3.4vw, 2.9rem)", letterSpacing: "-0.028em", lineHeight: 1.02 }}>{w.title}</h2>
             <p style={{ fontFamily: "var(--font-sans)", fontSize: "1.1rem", lineHeight: 1.6, color: "var(--text-secondary)", margin: "18px 0 0", maxWidth: "46ch" }}>{w.blurb}</p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 22, marginTop: 32 }}>
+            <div className="cg-stats" style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: 22, marginTop: 32 }}>
               {w.stats.map((s, i) => (
                 <StatBlock key={i} value={s.value} unit={s.unit} label={s.label} delta={s.delta} />
               ))}

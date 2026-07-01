@@ -65,7 +65,7 @@ export function Footer() {
         <div className="cg-footer-grid" style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr 1fr", gap: 40, marginTop: 40, alignItems: "start" }}>
           <div>
             <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(1.6rem, 3vw, 2.4rem)", letterSpacing: "-0.025em", lineHeight: 1.05, color: "var(--egg-50)", maxWidth: "16ch" }}>
-              Let&apos;s win the morning.
+              Singapore born. Chicago raised.
             </h3>
             <div style={{ marginTop: 24 }}>
               <Button as="a" href={`mailto:${CONTACT_EMAIL}`} variant="primary">

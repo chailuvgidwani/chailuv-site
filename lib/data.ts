@@ -48,35 +48,35 @@ export interface Plate {
 // especially photogenic) — swap in real ones via `img` if/when you have them.
 export const CG_WORK: WorkItem[] = [
   {
-    id: "morse",
-    no: "01",
-    role: "Finance Director",
-    title: "Jessica Morse for Congress",
-    place: "California · 2023–24",
-    tags: ["Call time", "Budget", "PACs & labor"],
-    blurb:
-      "Ran the finance operation for a top-tier U.S. House race — building the finance plan and call-time program, prospecting and managing hundreds of hours of candidate call time, and outraising a sitting Republican incumbent in back-to-back quarters.",
-    img: "/placeholders/work-01.svg",
-    stats: [
-      { value: "$2.2M+", label: "Total raised" },
-      { value: "2", unit: "qtrs", label: "Outraising the incumbent" },
-      { value: "PAC", label: "& labor support secured" },
-    ],
-  },
-  {
     id: "ammar",
-    no: "02",
+    no: "01",
     role: "Finance Director",
     title: "Ammar for Congress",
     place: "CA-48 · 2026",
     tags: ["Call time", "Paid comms", "Warchest"],
     blurb:
       "Directed finance for a competitive open-seat congressional race — building and operationalizing the finance plan and call-time program, owning budget and cashflow through spend-down, and helping shape contrast strategy across mail and digital.",
-    img: "/placeholders/work-02.svg",
+    img: "/placeholders/work-01.svg",
     stats: [
       { value: "$350K+", label: "Raised as Finance Director" },
       { value: "+33%", label: "Lift over the prior period", delta: "+33%" },
       { value: "CA-48", label: "Open-seat U.S. House race" },
+    ],
+  },
+  {
+    id: "morse",
+    no: "02",
+    role: "Finance Director",
+    title: "Jessica Morse for Congress",
+    place: "California · 2023–24",
+    tags: ["Call time", "Budget", "PACs & labor"],
+    blurb:
+      "Ran the finance operation for a top-tier U.S. House race — building the finance plan and call-time program, prospecting and managing hundreds of hours of candidate call time, and outraising a sitting Republican incumbent in back-to-back quarters.",
+    img: "/placeholders/work-02.svg",
+    stats: [
+      { value: "$2.2M+", label: "Total raised" },
+      { value: "2", unit: "qtrs", label: "Outraising the incumbent" },
+      { value: "PAC", label: "& labor support secured" },
     ],
   },
   {
