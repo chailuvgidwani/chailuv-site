@@ -83,9 +83,9 @@ export function WorkView() {
           <div style={{ background: "var(--egg-200)", borderRadius: "var(--radius-3)", padding: "clamp(28px, 5vw, 56px)", display: "flex", justifyContent: "space-between", alignItems: "center", gap: 24, flexWrap: "wrap" }}>
             <div>
               <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(1.5rem, 3vw, 2.2rem)", letterSpacing: "-0.02em" }}>Building a finance team?</h3>
-              <p style={{ fontFamily: "var(--font-sans)", color: "var(--text-secondary)", marginTop: 8, fontSize: "1.05rem" }}>I usually work with a single candidate a cycle.</p>
+              <p style={{ fontFamily: "var(--font-sans)", color: "var(--text-secondary)", marginTop: 8, fontSize: "1.05rem" }}>Let&apos;s connect and talk about it.</p>
             </div>
-            <Button as={Link} href="/about" size="lg">
+            <Button as={Link} href="/about#contact" size="lg">
               Start a conversation
             </Button>
           </div>

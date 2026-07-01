@@ -109,7 +109,7 @@ export function AboutView() {
         </div>
       </section>
 
-      <section style={{ ...WRAP, paddingBottom: "clamp(56px, 8vw, 104px)" }}>
+      <section id="contact" style={{ ...WRAP, paddingBottom: "clamp(56px, 8vw, 104px)", scrollMarginTop: 96 }}>
         <Reveal>
           <div
             className="cg-collapse"
