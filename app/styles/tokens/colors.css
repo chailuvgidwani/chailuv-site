@@ -1,0 +1,102 @@
+/* ============================================================
+   COLORS — Chailuv Gidwani
+   Chelsea royal blue · eggshell white · muted gold accent
+   A cool, structural palette warmed by paper and a single
+   brass note (echoing Chelsea's gold crest trim). No red.
+   ============================================================ */
+
+:root {
+  /* --- Royal blue (Chelsea FC) — the structural primary --- */
+  --blue-950: #021a3a;
+  --blue-900: #042450;
+  --blue-800: #042f68;
+  --blue-700: #033a80;
+  --blue-600: #034694; /* core Chelsea royal */
+  --blue-500: #15589f;
+  --blue-400: #3f74b6;
+  --blue-300: #7397c9;
+  --blue-200: #aac0df;
+  --blue-100: #d7e1ef;
+  --blue-50:  #eef2f9;
+
+  /* --- Eggshell — warm paper surfaces --- */
+  --egg-50:  #fcfaf4; /* brightest paper */
+  --egg-100: #f6f2e7; /* base eggshell page */
+  --egg-200: #efe9d8;
+  --egg-300: #e5ddc7;
+  --egg-400: #d8cdb1;
+
+  /* --- Ink — deep blue-black, never pure black --- */
+  --ink-900: #0a141f;
+  --ink-800: #10202f;
+  --ink-700: #1a2d3e;
+
+  /* --- Warm neutrals — greys with a hint of paper --- */
+  --neutral-900: #1c1d1a;
+  --neutral-800: #34362f;
+  --neutral-700: #4c4e46;
+  --neutral-600: #6a6c62;
+  --neutral-500: #8a8b80;
+  --neutral-400: #a9a99c;
+  --neutral-300: #c6c5b6;
+  --neutral-200: #dedccc;
+  --neutral-100: #ece9da;
+
+  /* --- Gold / brass — the single warm accent, used sparingly.
+         Echoes Chelsea's gold crest trim on royal blue. --- */
+  --gold-700: #6f5518;
+  --gold-600: #886820;
+  --gold-500: #a9852f; /* core */
+  --gold-400: #c4a24f;
+  --gold-200: #e6d5a2;
+  --gold-100: #f2eacd;
+
+  /* --- Functional / status (semantic only, not brand accents) --- */
+  --green-600: #2f6e4f;
+  --amber-600: #9a6a16;
+  --danger-600: #8a5a3c; /* muted clay — validation errors, never partisan red */
+
+  /* ========================================================
+     SEMANTIC ALIASES — reference these in components
+     ======================================================== */
+
+  /* Surfaces */
+  --color-bg:            var(--egg-100);
+  --color-bg-bright:     var(--egg-50);
+  --color-surface:       var(--egg-50);
+  --color-surface-sunken:var(--egg-200);
+  --color-surface-ink:   var(--ink-900);
+  --color-surface-blue:  var(--blue-600);
+
+  /* Text */
+  --text-primary:    var(--ink-900);
+  --text-secondary:  var(--neutral-700);
+  --text-muted:      var(--neutral-500);
+  --text-on-dark:    var(--egg-100);
+  --text-on-blue:    var(--egg-50);
+  --text-link:       var(--blue-600);
+  --text-link-hover: var(--blue-800);
+
+  /* Accent / interaction */
+  --accent:        var(--blue-600);
+  --accent-hover:  var(--blue-700);
+  --accent-press:  var(--blue-800);
+  --accent-soft:   var(--blue-50);
+  --highlight:     var(--gold-600);
+  --highlight-soft:var(--gold-100);
+
+  /* Lines & structure — the Miesian rule */
+  --rule:        color-mix(in srgb, var(--ink-900) 14%, transparent);
+  --rule-strong: color-mix(in srgb, var(--ink-900) 28%, transparent);
+  --rule-faint:  color-mix(in srgb, var(--ink-900) 7%, transparent);
+  --rule-on-dark:color-mix(in srgb, var(--egg-50) 20%, transparent);
+
+  /* Focus */
+  --focus-ring: var(--blue-500);
+
+  /* Selection */
+  --selection-bg: var(--blue-600);
+  --selection-fg: var(--egg-50);
+}
+
+::selection { background: var(--selection-bg); color: var(--selection-fg); }

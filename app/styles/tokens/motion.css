@@ -1,0 +1,61 @@
+/* ============================================================
+   MOTION — Chailuv Gidwani
+   Movement is structural and quiet: things settle into the grid.
+   No bounce, no overshoot. Long, controlled eases. Scroll reveals
+   are a few pixels of travel + a fade — felt, not seen.
+   ============================================================ */
+
+:root {
+  /* Easing — controlled, architectural */
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);   /* @kind other */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --ease-precise:cubic-bezier(0.4, 0, 0.2, 1);     /* @kind other */
+  --ease-linear: linear; /* @kind other */
+
+  /* Durations */
+  --dur-instant: 90ms;   /* @kind other */
+  --dur-fast:    160ms;  /* @kind other */
+  --dur-base:    240ms;  /* @kind other */
+  --dur-slow:    420ms;  /* @kind other */
+  --dur-reveal:  720ms;  /* @kind other */
+  --dur-drift:   1200ms; /* @kind other */
+
+  /* Scroll-reveal travel — keep it small (Scandinavian restraint) */
+  --reveal-travel: 14px;    /* @kind spacing */
+  --reveal-travel-lg: 28px; /* @kind spacing */
+
+  /* Interaction deltas */
+  --press-scale: 0.985; /* @kind other */
+  --hover-lift: -2px;   /* @kind other */
+}
+
+/* ---- Reusable scroll-reveal pattern ---- */
+@keyframes cg-reveal-up {
+  from { opacity: 0; transform: translateY(var(--reveal-travel)); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes cg-reveal-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes cg-rule-draw {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* Elements opt in with [data-reveal]; site JS toggles [data-revealed].
+   Base = hidden only when motion is allowed AND not yet revealed. */
+@media (prefers-reduced-motion: no-preference) {
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(var(--reveal-travel));
+    transition: opacity var(--dur-reveal) var(--ease-out),
+                transform var(--dur-reveal) var(--ease-out);
+    will-change: opacity, transform;
+  }
+  [data-reveal][data-revealed] {
+    opacity: 1;
+    transform: none;
+  }
+  [data-reveal="fade"] { transform: none; }
+}

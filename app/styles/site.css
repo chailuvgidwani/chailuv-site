@@ -1,0 +1,78 @@
+/* ============================================================
+   SITE-LEVEL CSS — Chailuv Gidwani (Next.js app only)
+   Small additions on top of the design system: responsive header
+   behaviour, single-column collapse below ~860px, and the quiet
+   per-view entrance. The design tokens themselves live in
+   styles.css + tokens/ and are shipped as-is.
+   ============================================================ */
+
+html,
+body {
+  min-height: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+
+/* ---- Responsive header nav ---- */
+.cg-nav-desktop {
+  display: flex;
+}
+.cg-nav-toggle {
+  display: none;
+}
+.cg-nav-mobile {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .cg-nav-desktop {
+    display: none !important;
+  }
+  .cg-nav-toggle {
+    display: inline-flex !important;
+  }
+  .cg-nav-mobile {
+    display: flex !important;
+  }
+
+  /* Single-column below the breakpoint. Inline grids set the desktop
+     layout; these override just the track definition. */
+  .cg-collapse {
+    grid-template-columns: 1fr !important;
+  }
+  .cg-collapse-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .cg-footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+  /* Case-study flip uses direction:rtl to swap sides; reset when stacked. */
+  .cg-case {
+    direction: ltr !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .cg-collapse-4 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ---- Quiet per-view entrance (honours reduced motion) ---- */
+.cg-view {
+  animation: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cg-view {
+    animation: cg-view-in var(--dur-slow) var(--ease-out);
+  }
+}
+@keyframes cg-view-in {
+  from {
+    transform: translateY(6px);
+  }
+  to {
+    transform: none;
+  }
+}

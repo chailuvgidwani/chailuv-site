@@ -1,0 +1,13 @@
+/* ============================================================
+   FONTS — Chailuv Gidwani
+   Schibsted Grotesk — a contemporary Scandinavian grotesk
+   (drawn for the Norwegian media group Schibsted).
+   IBM Plex Mono — neutral, architectural monospace for detail.
+
+   The Google Fonts @import was removed on hand-off to Next.js.
+   Both families are now loaded via `next/font/google` in
+   `app/layout.tsx` (self-hosted by Next, no layout shift, no
+   render-blocking network @import). The loader exposes them as
+   the `--font-schibsted` and `--font-plex` custom properties,
+   which `typography.css` maps onto `--font-sans` / `--font-mono`.
+   ============================================================ */

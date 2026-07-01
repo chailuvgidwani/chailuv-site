@@ -1,0 +1,73 @@
+/* ============================================================
+   TYPOGRAPHY — Chailuv Gidwani
+   Schibsted Grotesk (Scandinavian grotesk) for everything seen.
+   IBM Plex Mono for labels, captions, metadata, section numbers
+   — the technical "detail" voice that nods to the drawing set.
+   ============================================================ */
+
+:root {
+  /* Families — the actual faces are supplied by next/font/google
+     (see app/layout.tsx) through --font-schibsted / --font-plex.
+     The token names below stay stable for every component. */
+  --font-sans: var(--font-schibsted, "Schibsted Grotesk"), "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-plex, "IBM Plex Mono"), ui-monospace, "SF Mono", Menlo, monospace;
+  --font-display: var(--font-sans);
+
+  /* Weights */
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semibold:600;
+  --weight-bold:    700;
+  --weight-black:   800;
+
+  /* ---- Type scale (modernist, generous) ----
+     Body base = 18px. Display sizes fluid via clamp. */
+  --size-display-2xl: clamp(3.25rem, 1.6rem + 7vw, 6.5rem);   /* hero */
+  --size-display-xl:  clamp(2.5rem, 1.4rem + 4.6vw, 4.5rem);
+  --size-display-lg:  clamp(2rem, 1.3rem + 3vw, 3.25rem);
+  --size-h1: 2.5rem;   /* 40 */
+  --size-h2: 1.9375rem;/* 31 */
+  --size-h3: 1.5rem;   /* 24 */
+  --size-h4: 1.1875rem;/* 19 */
+  --size-body-lg: 1.25rem;  /* 20 */
+  --size-body:    1.125rem; /* 18 */
+  --size-body-sm: 1rem;     /* 16 */
+  --size-caption: 0.875rem; /* 14 */
+  --size-label:   0.75rem;  /* 12 — mono labels */
+  --size-micro:   0.6875rem;/* 11 */
+
+  /* Line heights */
+  --leading-tight:   1.04;
+  --leading-snug:    1.18;
+  --leading-heading: 1.1;
+  --leading-body:    1.6;
+  --leading-relaxed: 1.75;
+
+  /* Letter spacing — grotesks tighten on display, mono opens on labels */
+  --tracking-display: -0.03em;
+  --tracking-heading: -0.018em;
+  --tracking-normal:  0;
+  --tracking-label:   0.14em;  /* uppercase mono labels */
+  --tracking-wide:    0.06em;
+
+  /* ---- Semantic text roles ---- */
+  --text-display-font: var(--font-display);
+  --text-body-font:    var(--font-sans);
+  --text-label-font:   var(--font-mono);
+}
+
+/* ---- Optional convenience classes (components mostly use tokens) ---- */
+.t-display {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  font-size: var(--size-display-xl);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-display);
+}
+.t-label {
+  font-family: var(--font-mono);
+  font-size: var(--size-label);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}

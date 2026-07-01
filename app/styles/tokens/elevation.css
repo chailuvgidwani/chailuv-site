@@ -1,0 +1,35 @@
+/* ============================================================
+   ELEVATION — Chailuv Gidwani
+   Mies builds with lines, not drop-shadows. Default depth is a
+   hairline rule. Shadows are reserved, soft, blue-tinted, and
+   only appear for genuinely floating surfaces (menus, dialogs).
+   ============================================================ */
+
+:root {
+  --shadow-color: 16 32 56; /* @kind other */
+
+  --shadow-none: none;
+
+  /* Resting card: no shadow — define by rule + surface instead */
+  --shadow-flat: 0 0 0 1px var(--rule);
+
+  --shadow-sm:
+    0 1px 2px rgb(var(--shadow-color) / 0.05),
+    0 1px 1px rgb(var(--shadow-color) / 0.04);
+
+  --shadow-md:
+    0 4px 14px -6px rgb(var(--shadow-color) / 0.12),
+    0 1px 3px rgb(var(--shadow-color) / 0.06);
+
+  --shadow-lg:
+    0 18px 48px -20px rgb(var(--shadow-color) / 0.22),
+    0 4px 12px -6px rgb(var(--shadow-color) / 0.10);
+
+  --shadow-overlay:
+    0 28px 70px -24px rgb(var(--shadow-color) / 0.30),
+    0 8px 22px -10px rgb(var(--shadow-color) / 0.14);
+
+  /* Focus ring */
+  --ring: 0 0 0 3px color-mix(in srgb, var(--focus-ring) 38%, transparent);
+  --ring-inset: inset 0 0 0 1.5px var(--focus-ring);
+}

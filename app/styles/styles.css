@@ -1,0 +1,13 @@
+/* ============================================================
+   Chailuv Gidwani — Design System
+   Root stylesheet. Import-only manifest; consumers link this
+   single file. Order matters: fonts → tokens → base.
+   ============================================================ */
+
+@import "tokens/fonts.css";
+@import "tokens/colors.css";
+@import "tokens/typography.css";
+@import "tokens/spacing.css";
+@import "tokens/motion.css";
+@import "tokens/elevation.css";
+@import "tokens/base.css";

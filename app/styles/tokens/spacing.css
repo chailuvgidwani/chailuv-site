@@ -1,0 +1,52 @@
+/* ============================================================
+   SPACING & LAYOUT — Chailuv Gidwani
+   8px base, with fine architectural increments. The grid is
+   the design: wide gutters, a strong baseline, room to breathe.
+   ============================================================ */
+
+:root {
+  --space-0:  0;
+  --space-1:  0.25rem;  /* 4  */
+  --space-2:  0.5rem;   /* 8  */
+  --space-3:  0.75rem;  /* 12 */
+  --space-4:  1rem;     /* 16 */
+  --space-5:  1.5rem;   /* 24 */
+  --space-6:  2rem;     /* 32 */
+  --space-7:  2.5rem;   /* 40 */
+  --space-8:  3rem;     /* 48 */
+  --space-9:  4rem;     /* 64 */
+  --space-10: 5rem;     /* 80 */
+  --space-11: 7rem;     /* 112 */
+  --space-12: 9rem;     /* 144 */
+
+  /* Section rhythm */
+  --section-y: clamp(4rem, 8vw, 9rem); /* @kind spacing */
+  --gutter:    clamp(1.25rem, 5vw, 4rem); /* @kind spacing */
+
+  /* Content measures */
+  --measure-prose: 64ch;
+  --measure-narrow: 46ch;
+  --container:      1320px;
+  --container-text: 760px;
+
+  /* Radii — nearly square. Mies precision; soft only by a hair. */
+  --radius-0: 0;
+  --radius-1: 2px;
+  --radius-2: 4px;
+  --radius-3: 6px;
+  --radius-pill: 999px;
+
+  /* Borders */
+  --border-hair: 1px;
+  --border-1:    1.5px;
+  --border-2:    2px;
+  --border-rule: 1px; /* the structural rule weight */
+
+  /* Z layers */
+  --z-base: 0;      /* @kind other */
+  --z-raised: 10;   /* @kind other */
+  --z-sticky: 100;  /* @kind other */
+  --z-overlay: 1000;/* @kind other */
+  --z-modal: 1100;  /* @kind other */
+  --z-toast: 1200;  /* @kind other */
+}
