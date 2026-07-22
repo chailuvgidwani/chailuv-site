@@ -29,7 +29,7 @@ function CaseStudy({ w, flip }: { w: WorkItem; flip: boolean }) {
             <img src={w.img} alt={`${w.title} — district map`} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             <span style={{ position: "absolute", top: 14, left: 14, fontFamily: "var(--font-mono)", fontSize: 12, fontWeight: 600, letterSpacing: "0.1em", color: w.current ? "var(--ink-900)" : "var(--egg-50)", background: w.current ? "var(--gold-500)" : "var(--accent)", padding: "6px 10px" }}>{w.no}</span>
             {w.current && (
-              <span style={{ position: "absolute", top: 14, right: 14, display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--font-mono)", fontSize: 11, fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-900)", background: "var(--gold-100)", boxShadow: "inset 0 0 0 1px var(--gold-400)", padding: "6px 11px 6px 10px", borderRadius: "var(--radius-pill)" }}>
+              <span style={{ position: "absolute", top: "clamp(28px, 5%, 44px)", right: "clamp(28px, 5%, 44px)", display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--font-mono)", fontSize: 11, fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-900)", background: "var(--gold-100)", boxShadow: "inset 0 0 0 1px var(--gold-400)", padding: "6px 11px 6px 10px", borderRadius: "var(--radius-pill)" }}>
                 <span className="cg-pulse" aria-hidden="true" style={{ width: 7, height: 7, borderRadius: "50%", background: "var(--gold-600)" }} />
                 Current role
               </span>
