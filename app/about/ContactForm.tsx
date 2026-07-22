@@ -3,7 +3,7 @@
 import React from "react";
 import { Button } from "@/components/core/Button";
 import { Field } from "@/components/forms/Field";
-import { Input, Textarea, Select } from "@/components/forms/Input";
+import { Input, Textarea } from "@/components/forms/Input";
 
 interface FieldErrors {
   name?: string;
@@ -42,7 +42,6 @@ export function ContactForm() {
     const data = new FormData(form);
     const name = String(data.get("name") || "").trim();
     const email = String(data.get("email") || "").trim();
-    const reason = String(data.get("reason") || "");
     const message = String(data.get("message") || "").trim();
 
     const nextErrors: FieldErrors = {};
@@ -58,7 +57,7 @@ export function ContactForm() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, reason, message }),
+        body: JSON.stringify({ name, email, message }),
       });
       if (!res.ok) {
         const body = await res.json().catch(() => ({}));
@@ -85,14 +84,6 @@ export function ContactForm() {
       </Field>
       <Field label="Email" htmlFor="c-email" required error={errors.email}>
         <Input id="c-email" name="email" type="email" placeholder="you@example.com" invalid={!!errors.email} autoComplete="email" />
-      </Field>
-      <Field style={{ gridColumn: "1 / -1" }} label="This is about" htmlFor="c-reason">
-        <Select id="c-reason" name="reason" defaultValue="Campaign finance">
-          <option>Campaign finance</option>
-          <option>Consulting / advising</option>
-          <option>A photograph</option>
-          <option>Just saying hello</option>
-        </Select>
       </Field>
       <Field style={{ gridColumn: "1 / -1" }} label="Message" htmlFor="c-msg" hint="A sentence is plenty." error={errors.message} required>
         <Textarea id="c-msg" name="message" rows={4} placeholder="What's on your mind?" invalid={!!errors.message} />

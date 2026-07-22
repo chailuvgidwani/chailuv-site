@@ -16,6 +16,7 @@ const WRAP: React.CSSProperties = {
 };
 
 const TIMELINE = [
+  { yr: "2026", role: "Finance Director, Cooke for Congress (WI-03)" },
   { yr: "2026", role: "Finance Director, Ammar for Congress (CA-48)" },
   { yr: "2024", role: "Finance Director, Neva Parker for Assembly (AD-05)" },
   { yr: "2023", role: "Finance Director, Jessica Morse for Congress (CA-03)" },
@@ -126,11 +127,8 @@ export function AboutView() {
             <div>
               <SectionLabel number="04">Get in touch</SectionLabel>
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(1.8rem, 3.4vw, 2.6rem)", letterSpacing: "-0.028em", margin: "16px 0 0", lineHeight: 1.05 }}>
-                Planning a race, or want a print?
+                Contact me
               </h2>
-              <p style={{ color: "var(--text-secondary)", marginTop: 14, fontSize: "1.05rem", lineHeight: 1.6, maxWidth: "30ch" }}>
-                I&apos;m always happy to talk campaigns, cameras, and Chelsea FC.
-              </p>
             </div>
             <ContactForm />
           </div>
