@@ -27,7 +27,13 @@ function CaseStudy({ w, flip }: { w: WorkItem; flip: boolean }) {
             {/* District map, drawn in the brand palette (square source). */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={w.img} alt={`${w.title} — district map`} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-            <span style={{ position: "absolute", top: 14, left: 14, fontFamily: "var(--font-mono)", fontSize: 12, fontWeight: 600, letterSpacing: "0.1em", color: "var(--egg-50)", background: "var(--accent)", padding: "6px 10px" }}>{w.no}</span>
+            <span style={{ position: "absolute", top: 14, left: 14, fontFamily: "var(--font-mono)", fontSize: 12, fontWeight: 600, letterSpacing: "0.1em", color: w.current ? "var(--ink-900)" : "var(--egg-50)", background: w.current ? "var(--gold-500)" : "var(--accent)", padding: "6px 10px" }}>{w.no}</span>
+            {w.current && (
+              <span style={{ position: "absolute", top: 14, right: 14, display: "inline-flex", alignItems: "center", gap: 8, fontFamily: "var(--font-mono)", fontSize: 11, fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-900)", background: "var(--gold-100)", boxShadow: "inset 0 0 0 1px var(--gold-400)", padding: "6px 11px 6px 10px", borderRadius: "var(--radius-pill)" }}>
+                <span className="cg-pulse" aria-hidden="true" style={{ width: 7, height: 7, borderRadius: "50%", background: "var(--gold-600)" }} />
+                Current role
+              </span>
+            )}
           </div>
         </Reveal>
         <Reveal delay={100} style={{ direction: "ltr" }}>
@@ -42,11 +48,13 @@ function CaseStudy({ w, flip }: { w: WorkItem; flip: boolean }) {
             <div style={{ fontFamily: "var(--font-mono)", fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--accent)", marginBottom: 12 }}>{w.role} · {w.place}</div>
             <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(1.8rem, 3.4vw, 2.9rem)", letterSpacing: "-0.028em", lineHeight: 1.02 }}>{w.title}</h2>
             <p style={{ fontFamily: "var(--font-sans)", fontSize: "1.1rem", lineHeight: 1.6, color: "var(--text-secondary)", margin: "18px 0 0", maxWidth: "46ch" }}>{w.blurb}</p>
-            <div className="cg-stats" style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: 22, marginTop: 32 }}>
-              {w.stats.map((s, i) => (
-                <StatBlock key={i} value={s.value} unit={s.unit} label={s.label} delta={s.delta} />
-              ))}
-            </div>
+            {w.stats && w.stats.length > 0 && (
+              <div className="cg-stats" style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: 22, marginTop: 32 }}>
+                {w.stats.map((s, i) => (
+                  <StatBlock key={i} value={s.value} unit={s.unit} label={s.label} delta={s.delta} />
+                ))}
+              </div>
+            )}
           </div>
         </Reveal>
       </div>

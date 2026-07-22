@@ -23,7 +23,10 @@ export interface WorkItem {
   tags: string[];
   blurb: string;
   img: string;
-  stats: WorkStat[];
+  /** Omit for in-progress roles that shouldn't show a results row yet. */
+  stats?: WorkStat[];
+  /** Marks the present-day role — gets the "Current role" treatment. */
+  current?: boolean;
 }
 
 export interface Plate {
@@ -41,8 +44,20 @@ export interface Plate {
 // especially photogenic) — swap in real ones via `img` if/when you have them.
 export const CG_WORK: WorkItem[] = [
   {
-    id: "ammar",
+    id: "cooke",
     no: "01",
+    role: "Finance Director",
+    title: "Cooke for Congress",
+    place: "WI-03 · 2026",
+    tags: ["Call time", "Finance plan", "Red to Blue"],
+    blurb:
+      "Currently serving as Finance Director for DCCC Red to Blue race in Wisconsin's 3rd Congressional District.",
+    img: "/photos/districts/wi3.png",
+    current: true,
+  },
+  {
+    id: "ammar",
+    no: "02",
     role: "Finance Director",
     title: "Ammar for Congress",
     place: "CA-48 · 2026",
@@ -58,7 +73,7 @@ export const CG_WORK: WorkItem[] = [
   },
   {
     id: "morse",
-    no: "02",
+    no: "03",
     role: "Finance Director",
     title: "Morse for Congress",
     place: "CA-03 · 2023–24",
@@ -74,7 +89,7 @@ export const CG_WORK: WorkItem[] = [
   },
   {
     id: "new-chicago",
-    no: "03",
+    no: "04",
     role: "Finance Associate",
     title: "New Chicago Consulting",
     place: "Chicago · 2022–23",
@@ -90,7 +105,7 @@ export const CG_WORK: WorkItem[] = [
   },
   {
     id: "parker",
-    no: "04",
+    no: "05",
     role: "Finance Director",
     title: "Parker for Assembly",
     place: "AD-05 · 2024",
