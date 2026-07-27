@@ -6,7 +6,7 @@ import { SectionLabel } from "@/components/core/SectionLabel";
 import { Rule } from "@/components/core/Rule";
 import { Reveal } from "@/components/content/Reveal";
 import { PhotoFrame } from "@/components/content/PhotoFrame";
-import { CG_WORK, CG_PLATES, CG_PORTRAIT } from "@/lib/data";
+import { CG_WORK, CG_PLATES, CG_PORTRAIT_HOME } from "@/lib/data";
 
 const WRAP: React.CSSProperties = {
   maxWidth: 1320,
@@ -59,13 +59,13 @@ function Hero() {
         </div>
         <Reveal delay={200} style={{ alignSelf: "stretch" }}>
           <div style={{ position: "relative", height: "100%", minHeight: 400, overflow: "hidden", borderRadius: "var(--radius-2)", boxShadow: "inset 0 0 0 1px var(--rule-strong)" }}>
-            {/* Portrait — Marina City, Chicago. */}
+            {/* Portrait — black-and-white studio shot. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               ref={imgRef}
-              src={CG_PORTRAIT}
-              alt="Chailuv Gidwani in front of Marina City, Chicago"
-              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%", transform: "scale(1.06)", willChange: "transform" }}
+              src={CG_PORTRAIT_HOME}
+              alt="Portrait of Chailuv Gidwani"
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "72% 28%", transform: "scale(1.06)", willChange: "transform" }}
             />
           </div>
         </Reveal>

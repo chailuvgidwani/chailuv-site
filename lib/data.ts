@@ -142,6 +142,10 @@ export const CG_PLATES: Plate[] = [
   { figure: "15", caption: "Ronnie driving, 7:50 p.m.", meta: "18mm · ISO 200 · 1/30", src: "/photos/gallery/RonnieDriving.jpg", ratio: "3 / 2", category: "chicago" },
 ];
 
-/** Hero / About portrait. Filename is versioned so a content change forces
-    clients to re-fetch instead of serving a stale cached copy. */
+/** About-page portrait (color, Marina City). Filename is versioned so a
+    content change forces clients to re-fetch instead of serving a stale copy. */
 export const CG_PORTRAIT = "/photos/portrait-color.jpg";
+
+/** Home-page hero portrait (black-and-white studio shot). Kept separate so the
+    front page and the About page can carry different images. */
+export const CG_PORTRAIT_HOME = "/photos/portrait-home.jpg";
