@@ -65,7 +65,7 @@ function Hero() {
               ref={imgRef}
               src={CG_PORTRAIT_HOME}
               alt="Portrait of Chailuv Gidwani"
-              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%", transform: "scale(1.06)", willChange: "transform" }}
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "80% 20%", transform: "scale(1.06)", willChange: "transform" }}
             />
           </div>
         </Reveal>
