@@ -79,11 +79,11 @@ export const CG_WORK: WorkItem[] = [
     place: "CA-03 · 2023–24",
     tags: ["Call time", "Budget", "PACs & labor"],
     blurb:
-      "Ran the finance operation for a top-tier U.S. House race — building the finance plan and call-time program, prospecting and managing hundreds of hours of candidate call time, and outraising a sitting Republican incumbent in back-to-back quarters.",
+      "Ran the finance operation for a top-tier U.S. House race — building the finance plan and call-time program, prospecting and managing hundreds of hours of candidate call time, and outraising a sitting Republican incumbent for three straight quarters.",
     img: "/photos/districts/ca3.png",
     stats: [
       { value: "$2.2M+", label: "Total raised" },
-      { value: "2", unit: "qtrs", label: "Outraising the incumbent" },
+      { value: "3Q", label: "Outraising the incumbent" },
       { value: "PAC", label: "& labor support secured" },
     ],
   },
@@ -98,7 +98,7 @@ export const CG_WORK: WorkItem[] = [
       "On the finance teams behind Lightfoot for Chicago, Project 50 PAC, and Eileen O'Neill Burke for Cook County State's Attorney — prospecting call time, tracking financial performance, building automations, and staffing the events that carried a seven-figure share.",
     img: "/photos/districts/chicago.png",
     stats: [
-      { value: "$3M+", label: "Raised across the firm's campaigns" },
+      { value: "$3M+", label: "Raised in Chicago" },
       { value: "$1M+", label: "Raised through events staffed" },
       { value: "3", label: "Marquee Chicago clients" },
     ],

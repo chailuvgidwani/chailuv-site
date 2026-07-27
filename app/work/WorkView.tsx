@@ -77,7 +77,7 @@ export function WorkView() {
         </Reveal>
         <Reveal delay={160}>
           <p style={{ fontFamily: "var(--font-sans)", fontSize: "1.15rem", lineHeight: 1.6, color: "var(--text-secondary)", maxWidth: "52ch", margin: "24px 0 0" }}>
-            The campaigns whose finance operations I&apos;ve built and run — congressional and downballot, in California and Chicago.
+            The campaigns whose finance operations I&apos;ve built and run — congressional and downballot, on the west coast and at home in the midwest.
           </p>
         </Reveal>
       </section>

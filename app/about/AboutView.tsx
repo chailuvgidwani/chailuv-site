@@ -55,7 +55,7 @@ export function AboutView() {
                   <sup style={{ fontFamily: "var(--font-mono)", fontSize: "0.62em", color: "var(--highlight)", fontWeight: 600, marginLeft: 1 }}>1</sup> I spent nearly two years in Chicago honing the skills of fundraising, and have been serving as Finance Director ever since.
                 </p>
                 <p style={{ fontSize: "1.15rem", lineHeight: 1.6, color: "var(--text-secondary)" }}>
-                  I run finance operations for Democratic campaigns — building call-time programs, owning budget and cashflow, and raising the money that keeps a race competitive. I&apos;ve raised for congressional and assembly races in California, and prior to that worked with municipal and county-level candidates in Chicago, where I&apos;m based.
+                  My experience has focused on building and managing finance teams for Democratic campaigns — building efficient call-time and events programs, creating and owning finance plans, and most recently collaborating with paid media teams to make final decisions on communications. I&apos;ve raised for congressional and assembly races in California and Wisconsin, and prior to that worked with municipal and county-level candidates in Chicago, where I&apos;m primarily based.
                 </p>
                 <p style={{ fontSize: "1.15rem", lineHeight: 1.6, color: "var(--text-secondary)" }}>
                   I was born in Singapore, raised in the Chicago suburbs, and went to school in New York.

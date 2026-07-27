@@ -77,9 +77,9 @@ function Hero() {
 function StatBand() {
   const stats = [
     { value: "$2.2M+", label: "Raised for a single U.S. House race" },
-    { value: "3", label: "Campaign finance operations directed" },
+    { value: "3", label: "Federal campaign finance operations directed" },
     { value: "$3M+", label: "Raised on Chicago finance teams" },
-    { value: "2Q", label: "Outraising a sitting incumbent" },
+    { value: "3Q", label: "Outraising a sitting incumbent" },
   ];
   return (
     <section style={{ background: "var(--accent)", color: "var(--egg-50)" }}>

@@ -128,7 +128,7 @@ export function GalleryView() {
         </Reveal>
         <Reveal delay={80}>
           <h1 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(2.4rem, 5vw, 4rem)", letterSpacing: "-0.035em", lineHeight: 1, margin: "22px 0 0", maxWidth: "15ch" }}>
-            Between the campaigns, a camera.
+            Selected photography from travels and the trail.
           </h1>
         </Reveal>
         <Reveal delay={140}>
