@@ -111,7 +111,7 @@ export function AboutView() {
                   </a>
                 }
               >
-                I&apos;m killing time while I wait for life to shower me with meaning and happiness.
+                &ldquo;I&apos;m killing time while I wait for life to shower me with meaning and happiness.&rdquo;
               </Quote>
             </div>
           </Reveal>
