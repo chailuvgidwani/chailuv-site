@@ -98,7 +98,7 @@ export const CG_WORK: WorkItem[] = [
       "On the finance teams behind Lightfoot for Chicago, Project 50 PAC, and Eileen O'Neill Burke for Cook County State's Attorney — prospecting call time, tracking financial performance, building automations, and staffing the events that carried a seven-figure share.",
     img: "/photos/districts/chicago.png",
     stats: [
-      { value: "$3M+", label: "Raised in Chicago (area)" },
+      { value: "$3M+", label: "Raised in Chicago" },
       { value: "$1M+", label: "Raised through events staffed" },
       { value: "3", label: "Marquee Chicago clients" },
     ],
