@@ -1,15 +1,15 @@
 /* ============================================================
    TYPOGRAPHY — Chailuv Gidwani
-   Schibsted Grotesk (Scandinavian grotesk) for everything seen.
+   Libre Franklin (an open grotesque drawn from Franklin Gothic) for everything seen.
    IBM Plex Mono for labels, captions, metadata, section numbers
    — the technical "detail" voice that nods to the drawing set.
    ============================================================ */
 
 :root {
   /* Families — the actual faces are supplied by next/font/google
-     (see app/layout.tsx) through --font-schibsted / --font-plex.
+     (see app/layout.tsx) through --font-libre / --font-plex.
      The token names below stay stable for every component. */
-  --font-sans: var(--font-schibsted, "Schibsted Grotesk"), "Helvetica Neue", Arial, sans-serif;
+  --font-sans: var(--font-libre, "Libre Franklin"), "Helvetica Neue", Arial, sans-serif;
   --font-mono: var(--font-plex, "IBM Plex Mono"), ui-monospace, "SF Mono", Menlo, monospace;
   --font-display: var(--font-sans);
 

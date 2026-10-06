@@ -92,7 +92,7 @@ export function Footer() {
           }}
         >
           <span>© 2026 Chailuv Gidwani · Chicago, Illinois</span>
-          <span>Set in Schibsted Grotesk &amp; IBM Plex Mono</span>
+          <span>Set in Libre Franklin &amp; IBM Plex Mono</span>
         </div>
       </div>
     </footer>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Schibsted_Grotesk, IBM_Plex_Mono } from "next/font/google";
+import { Libre_Franklin, IBM_Plex_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./styles/styles.css";
 import "./styles/site.css";
@@ -9,10 +9,10 @@ import { Footer } from "@/components/site/Footer";
 // Fonts self-hosted by Next — replaces the Google Fonts @import that used to
 // live in tokens/fonts.css. These CSS variables feed --font-sans / --font-mono
 // (see tokens/typography.css).
-const schibsted = Schibsted_Grotesk({
+const libreFranklin = Libre_Franklin({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-schibsted",
+  variable: "--font-libre",
   display: "swap",
   fallback: ["Helvetica Neue", "Arial", "sans-serif"],
 });
@@ -44,7 +44,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${schibsted.variable} ${plexMono.variable}`}>
+    <html lang="en" className={`${libreFranklin.variable} ${plexMono.variable}`}>
       <body>
         <Header />
         <main>{children}</main>

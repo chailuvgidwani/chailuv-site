@@ -82,7 +82,7 @@ function StatBand() {
     { value: "3Q", label: "Outraising a sitting incumbent" },
   ];
   return (
-    <section style={{ background: "var(--accent)", color: "var(--egg-50)" }}>
+    <section style={{ background: "var(--ink-900)", color: "var(--egg-50)" }}>
       <div style={{ ...WRAP, paddingTop: "clamp(40px, 5vw, 64px)", paddingBottom: "clamp(40px, 5vw, 64px)" }}>
         <div
           className="cg-collapse-4"
@@ -90,9 +90,9 @@ function StatBand() {
         >
           {stats.map((s, i) => (
             <Reveal key={i} delay={i * 90}>
-              <div style={{ borderTop: "2px solid var(--rule-on-dark)", paddingTop: 14 }}>
+              <div style={{ borderTop: "2px solid var(--gold-400)", paddingTop: 14 }}>
                 <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(2rem, 3.6vw, 3rem)", letterSpacing: "-0.03em", lineHeight: 0.95 }}>{s.value}</div>
-                <div style={{ fontFamily: "var(--font-mono)", fontSize: 11.5, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--blue-100)", marginTop: 10, maxWidth: "22ch" }}>{s.label}</div>
+                <div style={{ fontFamily: "var(--font-mono)", fontSize: 11.5, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--egg-200)", marginTop: 10, maxWidth: "22ch" }}>{s.label}</div>
               </div>
             </Reveal>
           ))}
