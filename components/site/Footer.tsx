@@ -59,7 +59,7 @@ function ExternalCol({ title }: { title: string }) {
 
 export function Footer() {
   return (
-    <footer style={{ background: "var(--ink-900)", color: "var(--egg-100)", marginTop: 0 }}>
+    <footer data-nosnippet style={{ background: "var(--ink-900)", color: "var(--egg-100)", marginTop: 0 }}>
       <div style={{ maxWidth: 1320, margin: "0 auto", padding: "clamp(48px, 7vw, 88px) clamp(20px, 5vw, 56px)" }}>
         <Rule tone="onDark" number="04" label="Colophon" />
         <div className="cg-footer-grid" style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr 1fr", gap: 40, marginTop: 40, alignItems: "start" }}>

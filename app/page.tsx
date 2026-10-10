@@ -82,7 +82,7 @@ function StatBand() {
     { value: "3Q", label: "Outraising a sitting incumbent" },
   ];
   return (
-    <section style={{ background: "var(--ink-900)", color: "var(--egg-50)" }}>
+    <section data-nosnippet style={{ background: "var(--ink-900)", color: "var(--egg-50)" }}>
       <div style={{ ...WRAP, paddingTop: "clamp(40px, 5vw, 64px)", paddingBottom: "clamp(40px, 5vw, 64px)" }}>
         <div
           className="cg-collapse-4"
