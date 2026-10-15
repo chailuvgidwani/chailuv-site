@@ -127,8 +127,8 @@ export function GalleryView() {
           <SectionLabel number="02">Photographs</SectionLabel>
         </Reveal>
         <Reveal delay={80}>
-          <h1 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(2.4rem, 5vw, 4rem)", letterSpacing: "-0.035em", lineHeight: 1, margin: "22px 0 0", maxWidth: "15ch" }}>
-            Selected photography from travels and the trail.
+          <h1 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(1.55rem, 7.4vw, 4rem)", letterSpacing: "-0.035em", lineHeight: 1.04, margin: "22px 0 0" }}>
+            Selected photography<br />from&nbsp;travels&nbsp;and&nbsp;the&nbsp;trail.
           </h1>
         </Reveal>
         <Reveal delay={140}>
