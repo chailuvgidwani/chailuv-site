@@ -52,7 +52,7 @@ function Hero() {
             </h1>
           </Reveal>
           <Reveal delay={150}>
-            <p style={{ fontFamily: "var(--font-sans)", fontSize: "clamp(0.72rem, 3.4vw, 1.3rem)", fontWeight: 500, lineHeight: 1.4, color: "var(--text-secondary)", margin: "20px 0 0", whiteSpace: "nowrap" }}>
+            <p style={{ fontFamily: "var(--font-sans)", fontSize: "clamp(1.1rem, 1.6vw, 1.3rem)", fontWeight: 500, lineHeight: 1.4, color: "var(--text-secondary)", margin: "20px 0 0" }}>
               Fundraising for Democratic campaigns across America.
             </p>
           </Reveal>
