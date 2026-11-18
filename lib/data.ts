@@ -49,11 +49,15 @@ export const CG_WORK: WorkItem[] = [
     role: "Finance Director",
     title: "Cooke for Congress",
     place: "WI-03 · 2026",
-    tags: ["Call time", "Finance plan", "Red to Blue"],
+    tags: ["Red to Blue", "Call time", "FEC API"],
     blurb:
-      "Currently serving as Finance Director for DCCC Red to Blue race in Wisconsin's 3rd Congressional District.",
+      "Directed in-state fundraising for a DCCC Red to Blue race that flipped a Republican-held seat in Wisconsin's 3rd — raising $6.3M across the campaign committee, victory fund, and leadership PAC, with a Q3 that was the largest quarterly haul for a challenger House candidate in Wisconsin history. Led PAC, labor, and member outreach and ran the candidate call-time and in-district event programs, building automated call-time tracking, event RSVP updates, and FEC-API scripts to enrich and target donor prospecting.",
     img: "/photos/districts/wi3.png",
-    current: true,
+    stats: [
+      { value: "$6.3M", label: "Raised across committee, victory fund & PAC" },
+      { value: "FLIP", label: "Flipped a Republican-held seat" },
+      { value: "Q3", label: "Record challenger quarter in WI history" },
+    ],
   },
   {
     id: "ammar",
